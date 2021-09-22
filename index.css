@@ -1,0 +1,110 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(202, 190, 206);
+}
+li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+.container {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  grid-template-areas:
+    'banner banner banner banner facebook'
+    'banner banner banner banner twitter'
+    'banner banner banner banner masks'
+    'bday bday makeup costume wig'
+    'play sale sale candy great'
+    'play santa woman woman freeship'
+    'props santa hallow hallow2 witch'
+    'mask1 mask2 mask2 . addy';
+}
+
+.banner {
+  grid-area: banner;
+  padding-top: 0.5rem;
+}
+.facebook {
+  grid-area: facebook;
+  padding-top: 0.5rem;
+}
+.twitter {
+  grid-area: twitter;
+}
+.masks {
+  grid-area: masks;
+}
+.bday {
+  grid-area: bday;
+}
+.makeup {
+  grid-area: makeup;
+}
+.costume {
+  grid-area: costume;
+  justify-items: stretch;
+}
+.wig {
+  grid-area: wig;
+}
+
+.play {
+  grid-area: play;
+}
+.sale {
+  grid-area: sale;
+}
+.candy {
+  grid-area: candy;
+}
+.great {
+  grid-area: great;
+}
+
+.santa {
+  grid-area: santa;
+}
+.woman {
+  grid-area: woman;
+}
+.freeship {
+  grid-area: freeship;
+}
+.props {
+  grid-area: props;
+}
+.hallow {
+  grid-area: hallow;
+}
+.hallow2 {
+  grid-area: hallow2;
+}
+.witch {
+  grid-area: witch;
+}
+
+.mask1 {
+  grid-area: mask1;
+  justify-items: center;
+  padding-top: 10%;
+}
+
+.mask2 {
+  grid-area: mask2;
+}
+.addy {
+  grid-area: addy;
+  color: rgb(118, 33, 33);
+  padding-top: 25%;
+  font-size: 1.5rem;
+  text-align: right;
+}
